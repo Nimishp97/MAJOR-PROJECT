@@ -23,7 +23,7 @@ nltk.download('punkt')
 nltk.download('wordnet')
 stop_words = set(stopwords.words('english'))
 
-df = pd.read_csv("/content/gdrive/MyDrive/Kaggle/data.csv",usecols=['review','rating'])
+df = pd.read_csv("data.csv",usecols=['review','rating'])
 df.columns = ['reviews','ratings']
 
 def preprocessing(x):
